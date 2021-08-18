@@ -2,6 +2,7 @@
   <div class="hello">
     {{openid}}
     这次的项目是桂林公众号的开发hhhhhhhh红红火火恍恍惚惚
+    <el-button type="primary" @click="kjgz">主要按钮</el-button>
   </div>
 </template>
 
@@ -16,6 +17,9 @@
             }
         },
         methods: {
+            kjgz(){
+                this.$router.push('/kjgz');
+            },
             getQueryVariable(variable) {
                 var query = window.location.search.substring(1);
                 var vars = query.split("&");
